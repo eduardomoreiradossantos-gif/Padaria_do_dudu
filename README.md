@@ -1,4 +1,3 @@
-<<<<<<< Updated upstream
 🥖 Sistema de Gerenciamento de Pedidos – Padaria
 
 Projeto Integrado – DWS | POO | BD – 2026
