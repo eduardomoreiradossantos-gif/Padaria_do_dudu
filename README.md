@@ -1,197 +1,232 @@
-🥖 Padaria.sys — Sistema de Gerenciamento de Padaria
+🥖 Padaria.sys
 
-Sobre o projeto
+Sistema de Gerenciamento de Padaria
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Projeto-Integrado-8B4513?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Python-Flask-blue?style=for-the-badge&logo=python" />
+  <img src="https://img.shields.io/badge/Database-MySQL-orange?style=for-the-badge&logo=mysql" />
+  <img src="https://img.shields.io/badge/Frontend-HTML%20%7C%20CSS%20%7C%20JS-green?style=for-the-badge" />
+</p>
+
+📌 Sobre o projeto
 
 O Padaria.sys é um sistema de gerenciamento de padaria desenvolvido como parte do Projeto Integrado das disciplinas de Desenvolvimento Web (DWS), Programação Orientada a Objetos (POO) e Banco de Dados (BD).
 
-O objetivo é desenvolver uma aplicação que facilite o gerenciamento de uma padaria, permitindo o cadastro e a consulta de clientes, funcionários e produtos, além do registro e acompanhamento de pedidos.
+O objetivo é facilitar a administração de uma padaria, permitindo o cadastro e a consulta de clientes, funcionários e produtos, além do registro e acompanhamento de pedidos.
 
-Tecnologias utilizadas
+🚀 Tecnologias utilizadas
 
-HTML5: estrutura das páginas do sistema.
+Tecnologia
 
-CSS3: estilização e design da interface.
+Utilização
 
-JavaScript: interatividade e comunicação com a API.
+🌐 HTML5
 
-Python: desenvolvimento do back-end.
+Estrutura das páginas
 
-Flask: criação das rotas da API.
+🎨 CSS3
 
-MySQL: armazenamento dos dados.
+Estilização e design da interface
 
-XAMPP: gerenciamento do servidor MySQL e acesso ao phpMyAdmin.
+⚡ JavaScript
 
-mysql-connector-python: conexão entre Python e MySQL.
+Interatividade e comunicação com a API
 
-Estrutura de pastas
+🐍 Python
 
-Padaria_do_dudu/
+Desenvolvimento do back-end
+
+🔥 Flask
+
+Criação das rotas da API
+
+🗄️ MySQL
+
+Armazenamento dos dados
+
+🖥️ XAMPP
+
+Gerenciamento do MySQL e phpMyAdmin
+
+📂 Estrutura do projeto
+
+📁 Padaria_do_dudu/
 │
-├── index.html
-├── README.md
+├── 📄 index.html
+├── 📄 README.md
 │
-├── backend/
-│   ├── app.py
-│   ├── conexao.py
-│   ├── testar_conexao.py
-│   ├── requirements.txt
+├── 📁 backend/
+│   ├── 📄 app.py
+│   ├── 📄 conexao.py
+│   ├── 📄 testar_conexao.py
+│   ├── 📄 requirements.txt
 │   │
-│   ├── daos/
-│   │   ├── __init__.py
-│   │   └── dao.py
+│   ├── 📁 daos/
+│   │   ├── 📄 __init__.py
+│   │   └── 📄 dao.py
 │   │
-│   └── models/
-│       ├── __init__.py
-│       └── entidades.py
+│   └── 📁 models/
+│       ├── 📄 __init__.py
+│       └── 📄 entidades.py
 │
-├── database/
-│   └── banco_padaria.sql
+├── 📁 database/
+│   └── 📄 banco_padaria.sql
 │
-├── diagrama_de_classes/
-│   ├── conceitual.PNG
-│   └── logico.PNG
+├── 📁 diagrama_de_classes/
+│   ├── 🖼️ conceitual.PNG
+│   └── 🖼️ logico.PNG
 │
-├── pages/
-│   ├── clientes.html
-│   ├── funcionarios.html
-│   ├── pedidos.html
-│   └── produtos.html
+├── 📁 pages/
+│   ├── 📄 clientes.html
+│   ├── 📄 funcionarios.html
+│   ├── 📄 pedidos.html
+│   └── 📄 produtos.html
 │
-├── script/
-│   └── script.js
+├── 📁 script/
+│   └── 📄 script.js
 │
-└── style/
-    └── style.css
+└── 📁 style/
+    └── 📄 style.css
 
-Banco de dados
+🗄️ Banco de dados
 
-O banco de dados utilizado no projeto se chama sistema_padaria.
+O projeto utiliza o banco de dados sistema_padaria, criado através do arquivo:
 
-O arquivo responsável por sua criação é:
+📄 database/banco_padaria.sql
 
-database/banco_padaria.sql
-
-O banco possui cinco tabelas principais:
+📋 Tabelas do banco
 
 Tabela
 
 Descrição
 
-clientes
+👥 clientes
 
 Armazena os dados dos clientes.
 
-funcionarios
+👨‍🍳 funcionarios
 
 Armazena os dados dos funcionários.
 
-produtos
+🥐 produtos
 
-Armazena os produtos disponíveis na padaria.
+Armazena os produtos da padaria.
 
-pedidos
+🛒 pedidos
 
 Registra os pedidos realizados.
 
-itens_pedido
+📦 itens_pedido
 
-Armazena os produtos e as quantidades de cada pedido.
+Armazena os produtos e quantidades de cada pedido.
 
-As tabelas utilizam chaves primárias e estrangeiras para organizar os relacionamentos entre os dados.
+As tabelas utilizam chaves primárias (PK) e chaves estrangeiras (FK) para organizar os relacionamentos entre os dados.
 
-Como instalar e executar o projeto
+⚙️ Instalação e execução
 
-1. Instalar o XAMPP
+1️⃣ Instalar o XAMPP
 
 Baixe o XAMPP pelo site oficial:
 
-https://www.apachefriends.org/pt_br/index.html
+🔗 https://www.apachefriends.org/pt_br/index.html
 
-Após a instalação:
+Após instalar:
 
 Abra o XAMPP Control Panel.
 
-Inicie o serviço Apache.
+Inicie o Apache.
 
-Inicie o serviço MySQL.
+Inicie o MySQL.
 
-2. Importar o banco de dados
+2️⃣ Importar o banco de dados
 
-Abra o navegador e acesse http://localhost/phpmyadmin.
+Acesse http://localhost/phpmyadmin.
 
-Entre na aba Importar.
+Clique na aba Importar.
 
-Clique em Escolher arquivo.
-
-Selecione database/banco_padaria.sql.
+Selecione o arquivo database/banco_padaria.sql.
 
 Clique em Importar ou Executar.
 
-Verifique se o banco sistema_padaria foi criado.
+Confira se o banco sistema_padaria foi criado.
 
-O arquivo SQL já contém os comandos para criar e selecionar o banco de dados, portanto não é necessário criá-lo manualmente antes da importação.
+💡 O arquivo SQL já possui os comandos para criar e selecionar o banco. Não é necessário criá-lo manualmente antes da importação.
 
-3. Configurar a conexão com o banco
+3️⃣ Configurar a conexão
 
 O arquivo responsável pela conexão é:
 
-backend/conexao.py
+📄 backend/conexao.py
 
-As configurações utilizadas são:
+Configurações utilizadas:
 
-Host: localhost
+Configuração
 
-Usuário: root
+Valor
 
-Senha: vazia, na instalação padrão do XAMPP.
+Host
 
-Banco de dados: sistema_padaria
+localhost
 
-Porta: 3306
+Usuário
 
-Caso tenha configurado uma senha ou outra porta no MySQL, atualize as informações no arquivo de conexão.
+root
 
-4. Instalar as dependências
+Senha
 
-Abra o terminal do VS Code na pasta principal do projeto e execute:
+Vazia (padrão do XAMPP)
+
+Banco
+
+sistema_padaria
+
+Porta
+
+3306
+
+Caso tenha configurado uma senha diferente no MySQL, atualize o arquivo de conexão.
+
+4️⃣ Instalar as dependências
+
+Abra o terminal na pasta principal do projeto e execute:
 
 cd backend
 pip install -r requirements.txt
 
-5. Testar a conexão
+5️⃣ Testar a conexão com o banco
 
-Ainda dentro da pasta backend, execute:
+Execute o comando:
 
 python testar_conexao.py
 
-Esse arquivo permite verificar se o Python está conseguindo se conectar ao banco de dados.
+Esse arquivo verifica se o Python consegue acessar o banco de dados.
 
-6. Iniciar o servidor Flask
+6️⃣ Iniciar o servidor Flask
 
-Na pasta backend, execute:
+Ainda dentro da pasta backend, execute:
 
 python app.py
 
-O servidor será iniciado no endereço:
+🌐 Endereço do servidor:
 
 http://127.0.0.1:5000
 
 Mantenha o terminal aberto enquanto estiver utilizando o sistema.
 
-7. Abrir o site
+7️⃣ Abrir o site
 
 Coloque a pasta Padaria_do_dudu dentro do diretório:
 
 C:\xampp\htdocs\
 
-Com o Apache iniciado, acesse:
+Depois, acesse:
 
-http://localhost/Padaria_do_dudu/
+🔗 http://localhost/Padaria_do_dudu/
 
 O arquivo index.html será a página inicial do sistema.
 
-Rotas da API
+🔌 Rotas da API
 
 A API utiliza o endereço base:
 
@@ -203,100 +238,160 @@ Rota
 
 Funcionalidade
 
-GET
+🟢 GET
 
 /
 
 Apresenta informações da API.
 
-GET
+🟢 GET
 
 /api/clientes
 
 Consulta os clientes.
 
-POST
+🔵 POST
 
 /api/clientes
 
 Cadastra clientes.
 
-GET
+🟢 GET
 
 /api/funcionarios
 
 Consulta os funcionários.
 
-POST
+🔵 POST
 
 /api/funcionarios
 
 Cadastra funcionários.
 
-GET
+🟢 GET
 
 /api/produtos
 
 Consulta os produtos.
 
-POST
+🔵 POST
 
 /api/produtos
 
 Cadastra produtos.
 
-GET
+🟢 GET
 
 /api/pedidos
 
 Consulta os pedidos.
 
-POST
+🔵 POST
 
 /api/pedidos
 
 Registra pedidos e seus itens.
 
-Organização dos arquivos
+🧩 Organização dos arquivos
 
-index.html: página inicial do sistema.
+Arquivo/Pasta
 
-backend/app.py: aplicação Flask e rotas da API.
+Responsabilidade
 
-backend/conexao.py: conexão com o banco de dados.
+index.html
 
-backend/testar_conexao.py: teste de conexão com o MySQL.
+Página inicial do sistema.
 
-backend/daos/dao.py: operações de acesso ao banco de dados.
+backend/app.py
 
-backend/models/entidades.py: classes que representam as entidades do sistema.
+Aplicação Flask e rotas da API.
 
-backend/requirements.txt: dependências necessárias para executar o back-end.
+backend/conexao.py
 
-database/banco_padaria.sql: criação do banco, tabelas e dados iniciais.
+Conexão com o banco de dados.
 
-diagrama_de_classes/: diagramas conceitual e lógico.
+backend/testar_conexao.py
 
-pages/: páginas de gerenciamento de clientes, funcionários, produtos e pedidos.
+Teste de conexão com o MySQL.
 
-script/script.js: funcionalidades e comunicação com a API.
+backend/daos/dao.py
 
-style/style.css: estilos visuais do sistema.
+Operações de acesso ao banco.
 
-Observações
+backend/models/entidades.py
 
-O XAMPP deve estar com o MySQL iniciado para que o sistema consiga acessar o banco.
+Classes que representam as entidades.
 
-O servidor Flask também precisa estar em execução para que as funcionalidades que utilizam a API funcionem.
+backend/requirements.txt
 
-O endereço da API utilizado pelo JavaScript é http://127.0.0.1:5000.
+Dependências do Python.
 
-A configuração de CORS deve permitir a comunicação entre o front-end e o Flask quando forem executados em origens diferentes.
+database/banco_padaria.sql
 
-Informações acadêmicas
+Criação do banco e das tabelas.
 
-Instituição: Colégio UNASP-HT
-Projeto: Sistema de Gerenciamento de Padaria
-Disciplinas: DWS, POO e Banco de Dados
-Turma: 2° TIA
-Ano: 2026
+diagrama_de_classes/
+
+Diagramas conceitual e lógico.
+
+pages/
+
+Páginas de gerenciamento.
+
+script/script.js
+
+Funcionalidades e comunicação com a API.
+
+style/style.css
+
+Estilização das páginas.
+
+⚠️ Observações importantes
+
+O MySQL precisa estar iniciado no XAMPP para acessar o banco.
+
+O servidor Flask precisa estar em execução para utilizar as funcionalidades da API.
+
+O JavaScript utiliza Fetch para se comunicar com http://127.0.0.1:5000.
+
+A configuração de CORS deve permitir a comunicação entre o front-end e o Flask quando executados em origens diferentes.
+
+Os campos enviados pelo JavaScript devem ser compatíveis com os campos esperados pelo back-end.
+
+🎯 Objetivo acadêmico
+
+Desenvolver um sistema funcional integrando conhecimentos de desenvolvimento web, programação orientada a objetos e banco de dados, aplicando na prática os conteúdos estudados em sala de aula.
+
+🏫 Informações do projeto
+
+Informação
+
+Descrição
+
+🏫 Instituição
+
+Colégio UNASP-HT
+
+📚 Projeto
+
+Sistema de Gerenciamento de Padaria
+
+💻 Disciplinas
+
+DWS, POO e Banco de Dados
+
+🎓 Turma
+
+1° TIA
+
+📅 Ano
+
+2026
+
+<p align="center">
+  🥖 <strong>Padaria.sys</strong>
+  <br>
+  Projeto Integrado — 2026
+  <br>
+  <i>Organização, tecnologia e praticidade para uma padaria.</i>
+</p>
