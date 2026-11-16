@@ -160,7 +160,7 @@ O arquivo `index.html` é a página inicial do sistema.
 Trabalho desenvolvido para as disciplinas de **Desenvolvimento Web (DWS), Programação Orientada a Objetos (POO) e Banco de Dados (BD)**.
 
 **Instituição:** Colégio UNASP-HT  
-**Turma:** 1° TIA  
+**Turma:** 2° TIA  
 **Ano:** 2026
 
 ---
