@@ -1,0 +1,66 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Produtos</title>
+    <link rel="stylesheet" href="../style/style.css">
+    <script src="../script/script.js" defer></script>
+</head>
+<body data-page="produtos">
+
+<header>
+    <h2>Padaria.sys</h2>
+    <nav>
+        <a href="../index.html">Início</a>
+        <a href="clientes.html">Clientes</a>
+        <a href="produtos.html">Produtos</a>
+        <a href="funcionarios.html">Funcionários</a>
+        <a href="pedidos.html">Pedidos</a>
+    </nav>
+</header>
+
+<main class="container">
+    <h1>Cadastro de Produtos</h1>
+
+    <section class="painel">
+        <form id="formProduto">
+            <label>Nome:
+                <input type="text" name="nome" required>
+            </label>
+
+            <label>Descrição:
+                <input type="text" name="descricao">
+            </label>
+
+            <label>Preço:
+                <input type="number" name="preco" step="0.01" min="0.01" required>
+            </label>
+
+            <button type="submit">Cadastrar</button>
+        </form>
+
+        <p id="mensagemProduto"></p>
+    </section>
+
+    <section class="painel">
+        <h2>Produtos cadastrados</h2>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Nome</th>
+                    <th>Descrição</th>
+                    <th>Preço</th>
+                </tr>
+            </thead>
+            <tbody id="listaProdutos"></tbody>
+        </table>
+    </section>
+</main>
+
+<footer>Projeto Integrado - 2026</footer>
+
+</body>
+</html>

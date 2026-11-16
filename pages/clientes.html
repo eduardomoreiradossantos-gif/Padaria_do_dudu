@@ -1,0 +1,66 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Clientes</title>
+    <link rel="stylesheet" href="../style/style.css">
+    <script src="../script/script.js" defer></script>
+</head>
+<body data-page="clientes">
+
+<header>
+    <h2>Padaria.sys</h2>
+    <nav>
+        <a href="../index.html">Início</a>
+        <a href="clientes.html">Clientes</a>
+        <a href="produtos.html">Produtos</a>
+        <a href="funcionarios.html">Funcionários</a>
+        <a href="pedidos.html">Pedidos</a>
+    </nav>
+</header>
+
+<main class="container">
+    <h1>Cadastro de Clientes</h1>
+
+    <section class="painel">
+        <form id="formCliente">
+            <label>Nome:
+                <input type="text" name="nome" required>
+            </label>
+
+            <label>Telefone:
+                <input type="text" name="telefone">
+            </label>
+
+            <label>E-mail:
+                <input type="email" name="email">
+            </label>
+
+            <button type="submit">Cadastrar</button>
+        </form>
+
+        <p id="mensagemCliente"></p>
+    </section>
+
+    <section class="painel">
+        <h2>Clientes cadastrados</h2>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Nome</th>
+                    <th>Telefone</th>
+                    <th>E-mail</th>
+                </tr>
+            </thead>
+            <tbody id="listaClientes"></tbody>
+        </table>
+    </section>
+</main>
+
+<footer>Projeto Integrado - 2026</footer>
+
+</body>
+</html>

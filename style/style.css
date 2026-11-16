@@ -1,0 +1,362 @@
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --marrom: #4b3025;
+    --marrom-claro: #79513c;
+    --dourado: #d6a66b;
+    --creme: #faf6f0;
+    --branco: #ffffff;
+    --texto: #382a23;
+    --cinza: #8b817a;
+    --borda: #eee5dc;
+    --sombra: 0 8px 30px rgba(75, 48, 37, 0.07);
+}
+
+body {
+    font-family: 'DM Sans', sans-serif;
+    background: var(--creme);
+    color: var(--texto);
+    min-height: 100vh;
+}
+
+/* CABEÇALHO */
+
+header {
+    background: var(--marrom);
+    color: white;
+    padding: 23px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 25px;
+    flex-wrap: wrap;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.12);
+}
+
+header h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 27px;
+    letter-spacing: 0.5px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: #f5e9df;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 11px 15px;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    background: rgba(255, 255, 255, 0.13);
+    color: var(--dourado);
+}
+
+/* CONTEÚDO PRINCIPAL */
+
+.container {
+    width: 86%;
+    max-width: 1250px;
+    margin: 45px auto;
+    min-height: 65vh;
+}
+
+.container > h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 34px;
+    margin-bottom: 25px;
+    color: var(--marrom);
+}
+
+.container > h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 27px;
+    margin-bottom: 20px;
+    color: var(--marrom);
+}
+
+/* DESTAQUE DA PÁGINA INICIAL */
+
+.hero {
+    background: linear-gradient(120deg, #4b3025, #80573f);
+    color: white;
+    padding: 65px 55px;
+    border-radius: 18px;
+    margin-bottom: 45px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: var(--sombra);
+}
+
+.hero::after {
+    content: "🥐";
+    position: absolute;
+    right: 65px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 105px;
+    opacity: 0.9;
+}
+
+.hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    color: #f0dfd0;
+    font-size: 16px;
+    max-width: 500px;
+    line-height: 1.7;
+}
+
+/* CARDS */
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 22px;
+    margin-top: 25px;
+}
+
+.cards a {
+    background: var(--branco);
+    min-height: 145px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--borda);
+    border-radius: 15px;
+    color: var(--marrom);
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 700;
+    box-shadow: var(--sombra);
+    transition: 0.3s;
+}
+
+.cards a:hover {
+    transform: translateY(-6px);
+    border-color: var(--dourado);
+    background: #fffaf3;
+    box-shadow: 0 12px 30px rgba(75, 48, 37, 0.12);
+}
+
+/* FORMULÁRIOS E PAINÉIS */
+
+.painel {
+    background: var(--branco);
+    padding: 32px;
+    border: 1px solid var(--borda);
+    border-radius: 15px;
+    margin-top: 25px;
+    box-shadow: var(--sombra);
+}
+
+.painel h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 24px;
+    color: var(--marrom);
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin: 20px 0;
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--marrom);
+}
+
+input, select {
+    display: block;
+    width: 100%;
+    padding: 14px 16px;
+    margin-top: 9px;
+    border: 1px solid var(--borda);
+    border-radius: 9px;
+    background: #fdfbf9;
+    color: var(--texto);
+    font-family: inherit;
+    font-size: 14px;
+    outline: none;
+    transition: 0.3s;
+}
+
+input:focus, select:focus {
+    border-color: var(--dourado);
+    box-shadow: 0 0 0 3px rgba(214, 166, 107, 0.15);
+    background: white;
+}
+
+input::placeholder {
+    color: #aaa;
+}
+
+/* BOTÕES */
+
+button {
+    background: var(--marrom);
+    color: white;
+    padding: 14px 28px;
+    border: none;
+    border-radius: 9px;
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: var(--marrom-claro);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(75, 48, 37, 0.2);
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+/* MENSAGENS */
+
+#apiStatus,
+#mensagemCliente,
+#mensagemProduto,
+#mensagemFuncionario,
+#mensagemPedido {
+    margin-top: 18px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #66834e;
+}
+
+/* TABELAS */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 22px;
+    background: white;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+thead {
+    background: var(--marrom);
+    color: white;
+}
+
+th {
+    padding: 17px 15px;
+    font-size: 13px;
+    font-weight: 700;
+    text-align: left;
+}
+
+td {
+    padding: 16px 15px;
+    font-size: 14px;
+    border-bottom: 1px solid var(--borda);
+}
+
+tbody tr {
+    transition: 0.2s;
+}
+
+tbody tr:hover {
+    background: #fcf6ee;
+}
+
+tbody tr:last-child td {
+    border-bottom: none;
+}
+
+/* RODAPÉ */
+
+footer {
+    background: var(--marrom);
+    color: #e8d8ca;
+    text-align: center;
+    padding: 25px;
+    margin-top: 50px;
+    font-size: 13px;
+}
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 850px) {
+    header {
+        justify-content: center;
+        text-align: center;
+    }
+
+    nav {
+        justify-content: center;
+    }
+
+    .hero {
+        padding: 45px 30px;
+    }
+
+    .hero::after {
+        right: 25px;
+        font-size: 70px;
+        opacity: 0.3;
+    }
+}
+
+@media (max-width: 600px) {
+    .container {
+        width: 92%;
+        margin: 25px auto;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    .hero h1 {
+        font-size: 30px;
+    }
+
+    .hero {
+        padding: 40px 25px;
+    }
+
+    .painel {
+        padding: 20px;
+    }
+
+    nav {
+        gap: 4px;
+    }
+
+    nav a {
+        font-size: 12px;
+        padding: 9px;
+    }
+
+    table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+}
